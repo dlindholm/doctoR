@@ -1,0 +1,10 @@
+Package: doctoR
+Title: Tools and utilities for clinical research - the doctoR package
+Version: 0.0.1
+Authors@R: person("Daniel", "Lindholm", email = "daniel.lindholm@ucr.uu.se", role = c("aut", "cre"))
+Description: Tools and utilities for clinical research.
+Depends:
+    R (>= 3.2.4), ggplot2, dplyr, colorspace, scales, survival, DiagrammeR, reshape2
+License: GPL
+LazyData: true
+RoxygenNote: 5.0.1.9000
