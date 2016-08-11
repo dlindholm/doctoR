@@ -12,7 +12,7 @@ plot_imputation_results(original, imputed)
 \item{imputed}{The imputed data.frame}
 }
 \description{
-Typically used to compare imputed data with original data. I've used it 
+Typically used to compare imputed data with original data. I've used it
 in conjunction with the missForest package. The function returns a ggplot
 that shows the density of imputed data vs. original data.
 }

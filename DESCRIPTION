@@ -10,7 +10,7 @@ Depends:
     colorspace,
     scales,
     survival,
-    DiagrammeR,
+    diagram,
     reshape2
 License: GPL
 LazyData: true
