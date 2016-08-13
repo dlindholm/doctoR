@@ -14,6 +14,7 @@
 #' variable_table(plasma)
 
 variable_table <- function(df){
+  library(Hmisc)
   if(!is.data.frame(df)) stop("Not a data.frame!")
   var_names <- names(df)
   var_descriptions <- label(df)
@@ -24,7 +25,7 @@ variable_table <- function(df){
                                              paste(levels(i), collapse = ", "),")"))
                              else return(class(i))
   })
-  x <- cbind(var_names, var_descriptions, var_classes)
+  x <- cbind(var_names, var_descriptions, as.character(var_classes))
   rownames(x) <- NULL
   colnames(x) <- c("Variable", "Description", "Class")
   return(as.data.frame(x))
